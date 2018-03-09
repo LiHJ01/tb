@@ -482,6 +482,29 @@ window.onload = function(){
                 if(getCookie("chuan")){
                 	$(".qdl").html(getCookie("chuan"));
                 }
+                var $list = $(".tk li");
+				$list.eq(5).on("click",function(){
+					$("document,html").animate({scrollTop:0},500);
+					$li.eq(0).css("background-color","#FF780F");
+					$li.eq(0).find("a").css("color","white");
+					$li.eq(0).siblings().css("background-color","");
+					$li.eq(0).siblings().find("a").css("color","");
+				});
+                $list.eq(0).on("click",function(){
+					$("document,html").animate({scrollTop:955},500);
+				});
+				$list.eq(1).on("click",function(){
+					$("document,html").animate({scrollTop:1970},500);
+				});
+				$list.eq(2).on("click",function(){
+					$("document,html").animate({scrollTop:2800},500);
+				});
+				$list.eq(3).on("click",function(){
+					$("document,html").animate({scrollTop:3600},500);
+				});
+				$list.eq(4).on("click",function(){
+					$("document,html").animate({scrollTop:4830},500);
+				});
 			})
 			$(window).scroll(function(){
 				if($(document).scrollTop()>=285){
@@ -535,19 +558,19 @@ window.onload = function(){
 					$li.eq(0).siblings().css("background-color","");
 					$li.eq(0).siblings().find("a").css("color","");
 				});
-				$list.eq(0).on("click",function(){
-					$(document).scrollTop(955);
-				});
-				$list.eq(1).on("click",function(){
-					$(document).scrollTop(1970);
-				});
-				$list.eq(2).on("click",function(){
-					$(document).scrollTop(2800);
-				});
-				$list.eq(3).on("click",function(){
-					$(document).scrollTop(3600);
-				});
-				$list.eq(4).on("click",function(){
-					$(document).scrollTop(4830);
-				});
+//				$list.eq(0).on("click",function(){
+//					$(document).scrollTop(955);
+//				});
+//				$list.eq(1).on("click",function(){
+//					$(document).scrollTop(1970);
+//				});
+//				$list.eq(2).on("click",function(){
+//					$(document).scrollTop(2800);
+//				});
+//				$list.eq(3).on("click",function(){
+//					$(document).scrollTop(3600);
+//				});
+//				$list.eq(4).on("click",function(){
+//					$(document).scrollTop(4830);
+//				});
 			})
